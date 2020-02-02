@@ -89,3 +89,26 @@ void loop() {
     }
   }
 }
+
+// switch(Throttle){
+//     case DRIVE:
+//         switch(PowerSource){
+//             case BATTERY:
+
+//             break;
+//             case EDLC:
+
+//             break;
+//             default:
+//             break;
+//         }
+//     break;
+//     case FREE:
+
+//     break;
+//     case REGEN:
+
+//     break;
+//     default:
+//     break;
+// }
