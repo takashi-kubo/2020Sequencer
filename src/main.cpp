@@ -112,3 +112,40 @@ void loop() {
 //     default:
 //     break;
 // }
+
+// Allow StateTransition
+// Free->Drive
+// Free->Boost
+// Free->Regen
+// * -> Free
+// DIS-Allow StateTransition
+// Drive -> Boost
+// Drive -> Regen
+// Boost -> Drive
+// Boost -> Regen
+// Regen -> Drive
+// Regen -> Boost
+
+
+void drive(uint16_t throttleValue){
+
+}
+
+void boost(uint16_t throttleValue){
+
+}
+void freeRun(uint16_t throttleValue){
+
+}
+
+void regen(uint16_t throttleValue){
+
+}
+
+void (* const stateFunc[])(uint16_t) = {
+  drive, boost, freeRun, regen,
+};
+
+enum operationMode{
+  Drive, Boost, FreeRun, Regen,
+};
